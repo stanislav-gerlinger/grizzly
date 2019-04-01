@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-medium;
+    font-weight: normal;
+}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+html, body {
+    margin: 0;
+    font-family: $font-regular;
+    font-size: 13px;
+    color: $font-color;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    & > header {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+    
+    & > main {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        overflow: auto;
+        padding: 30px 0;
+    }
+    
+    & > footer {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1280px;
+}
