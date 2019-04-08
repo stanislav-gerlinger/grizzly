@@ -13,11 +13,11 @@
 
 Route::get('/', function () {
     return view('index');
-})->name('about');
+})->name('index');
 
 Route::get('/about', function () {
     return view('about');
-})->name('index');
+})->name('about');
 
 Route::get('/promotions', function () {
     return view('promotions');

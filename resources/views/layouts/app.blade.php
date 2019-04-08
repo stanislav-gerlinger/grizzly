@@ -11,6 +11,7 @@
         <meta name="keywords" content="@yield('title')">
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
@@ -19,5 +20,6 @@
         <main>@yield('content')</main>
 
         @include('components.footer')
+        <script type="text/javascript" src="https://w207795.yclients.com/widgetJS" charset="UTF-8"></script>
     </body>
 </html>
