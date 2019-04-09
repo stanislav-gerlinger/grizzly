@@ -7,7 +7,8 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+//window.Vue = require('vue');
+require('@fancyapps/fancybox');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20,3 +21,11 @@ window.Vue = require('vue');
 // const app = new Vue({
 //     el: '#app'
 // });
+
+window.yWidgetSettings = {
+    buttonColor : '#1c84c6',
+    buttonPosition : 'bottom right',
+    buttonAutoShow : true,
+    buttonText : 'Забронировать время',
+    formPosition : 'right'
+};

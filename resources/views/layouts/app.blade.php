@@ -9,7 +9,9 @@
         <title>@yield('title')</title>
         <meta name="description" content="@yield('title')">
         <meta name="keywords" content="@yield('title')">
+        <meta name="robots" content="noindex">
 
+        <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
         <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -20,6 +22,6 @@
         <main>@yield('content')</main>
 
         @include('components.footer')
-        <script type="text/javascript" src="https://w207795.yclients.com/widgetJS" charset="UTF-8"></script>
+        @include('components.yclientsbtn')
     </body>
 </html>
